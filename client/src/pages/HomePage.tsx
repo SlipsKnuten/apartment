@@ -14,4 +14,5 @@ const HomePage: React.FC = () => {
       <h1>Available Apartments</h1>
       <ApartmentList apartments={apartments} />
     </div>
- 
+  )
+}
