@@ -2,26 +2,11 @@ const express = require('express');
 const connectDB = require('./config/db');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const app = express();
-
-app.use(cors()); // Allow all origins for development
-
-app.use(express.json());
-
-// Define your routes
-app.get('/api/apartments', (req, res) => {
-  // Your route handler
-});
-
-// Start server
-app.listen(5000, () => {
-  console.log('Server running on port 5000');
-});
-
 
 dotenv.config();
 connectDB();
 
+const app = express();
 
 app.use(cors());
 app.use(express.json());
